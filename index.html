@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Juan Cruz</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/533356cf2f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="container">
+                <nav>
+                    <a href="#"><img src="images/logo.PNG" class="logo" alt="logo"></a>
+                    <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#extracurricular">Extracurriculars</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark top-icon" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars top-icon" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </header>
+
+        <div id="home">
+            <div class="header-text">
+                <p><br></p>
+                <p id="home-text">Software Engineer</p>
+                <h1>Hi, I'm <span>Juan</span> Cruz</h1>
+            </div>
+        </div>
+            
+        <!--------------- About --------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about1">
+                        <img src="images/aboutme.JPG" alt="My Photo" class="myPhoto">
+                    </div>
+                    <div class="about2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am currently a Junior Undergrad student at UIC majoring in Computer Science with concentration in Software Engineering<br><br>
+                            My very first ever coding experience was when I was in High School. I went to Taft High School in Chicago, and graduated in 2021. 
+                            I took a computer science class on my sophomore year and I was captivated with coding. 
+                            On my senior year of high school, I took a Robotics class, it was an online class because it was during covid, but that didn't stop us from learning Arduino. 
+                            My teacher went to my house to give me an Arduino kit, that was my first time working with Arduino, and I was really fascinated of what it can do. 
+                            From there, I decided I'm going to major in Computer Science for college. So far, I have taken a scattering number of CS classes including 
+                            Program Design I and II, Foundations of Computing, Programming Practicum, Data Structures, Machine Organization, and Software Design.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Python was the first Language I learned at UIC. We used python for coding on my first class at UIC, Program Design I.</li>
+                                <li><span>C/C++</span><br>Multiple classes that I have taken at UIC used C and C++. I have completed more than 10 projects using C/C++ mostly on my own.</li>
+                                <li><span>Java</span><br>I recently just learned Java for my Software Design class. I worked with a partner and completed 3 projects together, and I completed one project by myself.</li>
+                                <li><span>HTML/CSS   <a class="certificate" href="https://www.freecodecamp.org/certification/Jcruz85/responsive-web-design" target="_blank"><i class="fa-solid fa-certificate"></i> Certificate</a></span><br>
+                                    I received a certifaction for a Responsive Web Design course that I completed online learning on my own.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Spring 2023 Hackathon</span><br>It was the first ever hackathon at UIC. 
+                                    Me and my team of four implemented a renting website for the campus that helps other students by lending them an item they need. 
+                                    The website was completed using HTML/CSS and JavaScript.</li>
+                                <li><span>Project 1 (coming soon)</span><br>My first personal project, worked on my own.</li>
+                                <li><span>Project 2 (coming soon)</span><br>My second personal project, worked with a partner.</li>
+                            </ul>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>William Howard Taft High School</span><br>Graduated in 2021</li>
+                                <li><span>University of Illinois at Chicago</span><br>Junior Undergrad || Expected graduation - 2025</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------Extracurriculars----------- -->
+        <div id="extracurricular">
+            <div class="container">
+                <h1 class="'subtitle">My Extracurriculars</h1>
+                <div class="extracurricular-list">
+                    <div>
+                        <i class="fa-solid fa-fire"></i>
+                        <h2>Ignite</h2>
+                        <p>Ignite is a leadership program that I participated during my freshamn year. I started as a mentee on my first year at UIC then I became a mentor on the fall semester of 2022 to 
+                            help the incoming freshmen to make connections and strengthen their leadership skills. </p>
+                            <a href="https://slce.uic.edu/leadership/ignite/" target="_blank" class="learn-more">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-robot"></i>
+                        <h2>Chicago EDT</h2>
+                        <p>Chicago EDT is a robotics club at UIC, this was my very first club on my first semester at UIC. During that semester we were supposed to compete at Urbana Champaign, but due
+                            to covid, the competition was canceled. There were three robots to work on: air, ground, and the moon robot. I decided to work with
+                            the air robot. The robot is like a drone type robot. The robot's objective is to collect a ballpit balls and shoot it to another robot.
+                        </p>
+                            <a href="https://chicagoedt.org/" target="_blank" class="learn-more">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-infinity"></i>
+                        <h2>Campus Outreach</h2>
+                        <p>Campus Outreach is another leadership program at UIC. I joined Campus Outreach on my whole year of freshman year and it was the highlight of my freshman year. I met a lot of incredible people that I still hang out with. 
+                            I learned a lot from the staff members, mentors, and from the other participants as well. </p>
+                            <a href="https://www.comemphis.org/chicago" target="_blank" class="learn-more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------projects--------------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="'subtitle">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Tax Return Data/tax1.PNG" alt="project1">
+                        <div class="layer"> <!--   PROJECT 1  -->
+                            <h3 class="project-name">Tax Return Data</h3>
+                            <div class="project-btn">Python</div>
+                                <a href="tax.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Message Clone/message1.PNG" alt="project2">
+                        <div class="layer"> <!--   PROJECT 1  -->
+                            <h3 class="project-name">Message App clone</h3>
+                            <div class="project-btn">Java</div>
+                            <!-- <p>Created a message app clone, the app is similar to how a message works. Every client automatically connects to a server when they open the app.
+                                The server do all the transfering of the message. The client has an option to send a group text to all the active clients, or the client can send a private message
+                                to one client only, or the client can send a message only to a specific group of people. This is done by threading.
+                            </p> -->
+                                <a href="message.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Search Engine/searchEngine1.PNG" alt="project3">
+                        <div class="layer"> <!--   PROJECT 1  -->
+                            <h3 class="project-name">Custom Search Engine</h3>
+                            <div class="project-btn">C++</div>
+                                <a href="search.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="project.html" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- -------------------contact------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> Juanmiguelcruz23@gmail.com</p>
+                        <p><i class="fa-solid fa-paper-plane"></i> Jcruz85@uic.edu</p>
+                        <p><i class="fa-solid fa-phone"></i> (773)-592-9512</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/juan-miguel-cruz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Jcruz202" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/Juan Cruz Ineternship Resume.pdf" download class="btn btn2"><i class="fa-solid fa-file"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------Footer-------------------- -->
+            <div class="copyright">
+                <p>Copyright © Juan Cruz</p>
+            </div>
+        </div>
+ 
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of  tablinks){
+                    tablink.classList.remove("active-link"); 
+                }
+                for(tabcontent of  tabcontents){
+                    tabcontent.classList.remove("active-tab"); 
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
